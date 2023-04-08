@@ -1,0 +1,97 @@
+2023-04-08T11:09:22.266+05:30  INFO 35456 --- [restartedMain] c.r.G1AuthenticationServiceApplication   : Starting G1AuthenticationServiceApplication using Java 17.0.6 with PID 35456 (C:\Updated PMS\For Logger\g1-authentication-servicee\g1-authentication-service\target\classes started by Akshay Pramod Kadam in C:\Updated PMS\For Logger\g1-authentication-servicee\g1-authentication-service)
+2023-04-08T11:09:22.280+05:30  INFO 35456 --- [restartedMain] c.r.G1AuthenticationServiceApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-04-08T11:09:22.362+05:30  INFO 35456 --- [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9001
+2023-04-08T11:09:22.363+05:30  INFO 35456 --- [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Connect Timeout Exception on Url - http://localhost:9001. Will try the next url if available
+2023-04-08T11:09:22.363+05:30  WARN 35456 --- [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Could not locate PropertySource ([ConfigServerConfigDataResource@41c5caf4 uris = array<String>['http://localhost:9001'], optional = true, profiles = list['default']]): I/O error on GET request for "http://localhost:9001/g1-authentication-service/default": Connection refused: no further information
+2023-04-08T11:09:22.369+05:30  INFO 35456 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-08T11:09:24.261+05:30  INFO 35456 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-08T11:09:24.522+05:30  INFO 35456 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 239 ms. Found 1 JPA repository interfaces.
+2023-04-08T11:09:24.967+05:30  INFO 35456 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7663ce85-56a7-3b6b-977c-847b1b642921
+2023-04-08T11:09:25.910+05:30  INFO 35456 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9004 (http)
+2023-04-08T11:09:25.926+05:30  INFO 35456 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-08T11:09:25.927+05:30  INFO 35456 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-04-08T11:09:26.115+05:30  INFO 35456 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-08T11:09:26.116+05:30  INFO 35456 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3746 ms
+2023-04-08T11:09:27.115+05:30  INFO 35456 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-08T11:09:27.713+05:30  INFO 35456 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1ed8a158
+2023-04-08T11:09:27.718+05:30  INFO 35456 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-08T11:09:27.878+05:30  INFO 35456 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-08T11:09:29.456+05:30  INFO 35456 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-08T11:09:30.326+05:30  WARN 35456 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-08T11:09:32.187+05:30  WARN 35456 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-04-08T11:09:32.391+05:30  WARN 35456 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-04-08T11:09:32.398+05:30  INFO 35456 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoint(s) beneath base path '/actuator'
+2023-04-08T11:09:32.524+05:30  INFO 35456 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9004 (http) with context path ''
+2023-04-08T11:09:32.526+05:30  INFO 35456 --- [restartedMain] o.s.c.c.s.ConsulServiceRegistry          : Registering service with consul: NewService{id='g1-authentication-service-9004', name='g1-authentication-service', tags=[], address='White-Wolf', meta={secure=false}, port=9004, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='12s', ttl='null', http='http://White-Wolf:9004/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+2023-04-08T11:09:32.661+05:30  INFO 35456 --- [restartedMain] c.r.G1AuthenticationServiceApplication   : Started G1AuthenticationServiceApplication in 11.917 seconds (process running for 12.791)
+2023-04-08T11:09:35.873+05:30  INFO 35456 --- [http-nio-9004-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-08T11:09:35.876+05:30  INFO 35456 --- [http-nio-9004-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-08T11:09:35.879+05:30  INFO 35456 --- [http-nio-9004-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-04-08T11:10:42.257+05:30  WARN 35456 --- [http-nio-9004-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /
+2023-04-08T11:10:42.928+05:30  WARN 35456 --- [http-nio-9004-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2023-04-08T11:11:17.114+05:30  WARN 35456 --- [http-nio-9004-exec-4] o.s.web.servlet.PageNotFound             : Request method 'GET' is not supported
+2023-04-08T16:03:18.339+05:30  INFO 16448 --- [restartedMain] c.r.G1AuthenticationServiceApplication   : Starting G1AuthenticationServiceApplication using Java 17.0.6 with PID 16448 (C:\Updated PMS\For Logger\g1-authentication-servicee\g1-authentication-service\target\classes started by Akshay Pramod Kadam in C:\Updated PMS\For Logger\g1-authentication-servicee\g1-authentication-service)
+2023-04-08T16:03:18.343+05:30  INFO 16448 --- [restartedMain] c.r.G1AuthenticationServiceApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-04-08T16:03:18.452+05:30  INFO 16448 --- [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9001
+2023-04-08T16:03:18.453+05:30  INFO 16448 --- [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Connect Timeout Exception on Url - http://localhost:9001. Will try the next url if available
+2023-04-08T16:03:18.453+05:30  WARN 16448 --- [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Could not locate PropertySource ([ConfigServerConfigDataResource@7a15839f uris = array<String>['http://localhost:9001'], optional = true, profiles = list['default']]): I/O error on GET request for "http://localhost:9001/g1-authentication-service/default": Connection refused: no further information
+2023-04-08T16:03:18.457+05:30  INFO 16448 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-08T16:03:20.936+05:30  INFO 16448 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-08T16:03:21.258+05:30  INFO 16448 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 305 ms. Found 1 JPA repository interfaces.
+2023-04-08T16:03:21.679+05:30  INFO 16448 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f04d1272-be81-3f4e-9dbf-a87d1434591a
+2023-04-08T16:03:22.659+05:30  INFO 16448 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9004 (http)
+2023-04-08T16:03:22.675+05:30  INFO 16448 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-08T16:03:22.676+05:30  INFO 16448 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-04-08T16:03:22.869+05:30  INFO 16448 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-08T16:03:22.870+05:30  INFO 16448 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4411 ms
+2023-04-08T16:03:23.986+05:30  INFO 16448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-08T16:03:24.749+05:30  INFO 16448 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@34c87cf5
+2023-04-08T16:03:24.756+05:30  INFO 16448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-08T16:03:24.985+05:30  INFO 16448 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-08T16:03:26.836+05:30  INFO 16448 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-08T16:03:27.885+05:30  WARN 16448 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-08T16:03:30.604+05:30  INFO 16448 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-08T16:03:30.892+05:30  WARN 16448 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-04-08T16:03:30.901+05:30  INFO 16448 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoint(s) beneath base path '/actuator'
+2023-04-08T16:03:31.104+05:30  INFO 16448 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9004 (http) with context path ''
+2023-04-08T16:03:31.110+05:30  INFO 16448 --- [restartedMain] o.s.c.c.s.ConsulServiceRegistry          : Registering service with consul: NewService{id='g1-authentication-service-9004', name='g1-authentication-service', tags=[], address='White-Wolf', meta={secure=false}, port=9004, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='12s', ttl='null', http='http://White-Wolf:9004/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+2023-04-08T16:03:31.301+05:30  INFO 16448 --- [http-nio-9004-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-08T16:03:31.302+05:30  INFO 16448 --- [http-nio-9004-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-08T16:03:31.305+05:30  INFO 16448 --- [http-nio-9004-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-04-08T16:03:31.675+05:30  INFO 16448 --- [restartedMain] c.r.G1AuthenticationServiceApplication   : Started G1AuthenticationServiceApplication in 14.909 seconds (process running for 20.021)
+2023-04-08T16:04:46.846+05:30  INFO 16448 --- [RMI TCP Connection(9)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-04-08T16:04:46.886+05:30  INFO 16448 --- [RMI TCP Connection(9)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-08T16:04:46.893+05:30  INFO 16448 --- [RMI TCP Connection(9)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-04-08T16:04:46.917+05:30  INFO 16448 --- [RMI TCP Connection(9)-127.0.0.1] o.s.c.c.s.ConsulServiceRegistry          : Deregistering service with consul: g1-authentication-service-9004
+2023-04-08T16:04:46.943+05:30  INFO 16448 --- [RMI TCP Connection(9)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-08T16:04:46.956+05:30  INFO 16448 --- [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-08T16:04:46.988+05:30  INFO 16448 --- [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-08T16:09:04.917+05:30  WARN 25868 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Akshay%20Pramod%20Kadam/.m2/repository/org/json/json/20160212/json-20160212.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Akshay%20Pramod%20Kadam/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2023-04-08T16:09:04.965+05:30  INFO 25868 --- [main] AuthenticationServicePmsApplicationTests : Starting G1AuthenticationServicePmsApplicationTests using Java 17.0.6 with PID 25868 (started by Akshay Pramod Kadam in C:\Updated PMS\For Logger\g1-authentication-servicee\g1-authentication-service)
+2023-04-08T16:09:04.966+05:30  INFO 25868 --- [main] AuthenticationServicePmsApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2023-04-08T16:09:05.045+05:30  INFO 25868 --- [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9001
+2023-04-08T16:09:05.045+05:30  INFO 25868 --- [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Connect Timeout Exception on Url - http://localhost:9001. Will try the next url if available
+2023-04-08T16:09:05.047+05:30  WARN 25868 --- [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Could not locate PropertySource ([ConfigServerConfigDataResource@43a51d00 uris = array<String>['http://localhost:9001'], optional = true, profiles = list['default']]): I/O error on GET request for "http://localhost:9001/g1-authentication-service/default": Connection refused: no further information
+2023-04-08T16:09:07.150+05:30  INFO 25868 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-08T16:09:07.456+05:30  INFO 25868 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 291 ms. Found 1 JPA repository interfaces.
+2023-04-08T16:09:07.952+05:30  INFO 25868 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6df84240-5a0c-373c-aeff-4a923490b1ac
+2023-04-08T16:09:09.647+05:30  INFO 25868 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-08T16:09:10.246+05:30  INFO 25868 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5b71af0d
+2023-04-08T16:09:10.254+05:30  INFO 25868 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-08T16:09:10.429+05:30  INFO 25868 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-08T16:09:11.997+05:30  INFO 25868 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-08T16:09:13.201+05:30  WARN 25868 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-08T16:09:16.264+05:30  WARN 25868 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-04-08T16:09:16.279+05:30  INFO 25868 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoint(s) beneath base path '/actuator'
+2023-04-08T16:09:16.430+05:30  INFO 25868 --- [main] AuthenticationServicePmsApplicationTests : Started G1AuthenticationServicePmsApplicationTests in 12.97 seconds (process running for 15.039)
+2023-04-08T16:09:16.957+05:30  INFO 25868 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-08T16:09:16.964+05:30  INFO 25868 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-08T16:09:16.987+05:30  INFO 25868 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
